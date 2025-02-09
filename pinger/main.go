@@ -70,7 +70,6 @@ func main() {
 				fmt.Printf("IP для %s (%s) успешно сохранен в базу данных.\n", listContainer, ip)
 			}
 
-			// Выполняем команду ping
 			cmd := exec.Command("ping", "-c", "1", ip)
 			output, err := cmd.CombinedOutput()
 			if err != nil {
@@ -79,6 +78,6 @@ func main() {
 				fmt.Printf("Результат пинга %s (%s):\n%s\n", listContainer, ip, string(output))
 			}
 		}
-		time.Sleep(time.Second * 10) // Пауза между пингами
+		time.Sleep(time.Second * 10) 
 	}
 }
