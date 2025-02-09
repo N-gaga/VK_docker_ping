@@ -17,8 +17,7 @@ VK_docker_ping
 Установка и запуск
   1) Склонируйте репозиторий:
 
-git clone https://github.com/<your-username>/pinger-service.git
-cd pinger-service
+git clone https://github.com/N-gaga/VK_docker_ping.git
 
  2) Соберите и запустите контейнеры с помощью Docker Compose:
 
